@@ -28,9 +28,11 @@
     }
 
     #yes-btn {
-      background-color: #4caf50;
-      color: #ffffff;
-    }
+  background-color: #4caf50;
+  color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
     #no-btn {
       background-color: #e74c3c;
@@ -55,7 +57,8 @@
   <div id="question-container">
     <h1>Do you love me Amy? <span style="font-size: 24px;">❤️</span></h1>
     <button id="yes-btn" onclick="showLove()">Yes <span style="font-size: 16px;">😊</span></button>
-    <button id="no-btn" onmouseover="moveNo()" onclick="moveNo()">No <span style="font-size: 16px;">😢</span></button>
+   <button id="no-btn" onmouseover="moveNo()" onclick="moveNo()" style="top: 60px; left: 50%;">No <span style="font-size: 16px;">😢</span></button>
+
   </div>
 
   <script>
